@@ -361,7 +361,7 @@ while true; do
                 rm -r -f $REPORT_PATH
             else
                 REMOTE_NAME=$(git remote)
-                git tag --force "${CODE_BRANCH_NAME}-result-successful" $COMMIT
+                git tag --force "${CODE_BRANCH_NAME}-ci-success" $COMMIT
                 git push --force $REMOTE_NAME --tags           
             fi
         done
